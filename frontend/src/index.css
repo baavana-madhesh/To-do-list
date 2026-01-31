@@ -453,3 +453,70 @@ button.delete:hover {
   border: 1px solid #d1d5db;
   margin-top: 4px;
 }
+
+/* ---------- RESPONSIVE ADJUSTMENTS ---------- */
+@media (max-width: 992px) {
+
+  /* Hide sidebar for medium/smaller screens to free up space */
+  .sidebar {
+    display: none;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 16px;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .chart-container {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Make task boxes and forms more compact on mobile */
+  .main-content {
+    padding: 12px;
+  }
+
+  .create-task,
+  .create-task form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .task-box {
+    padding: 12px;
+  }
+
+  .task-details h3 {
+    font-size: 16px;
+  }
+
+  .task-details p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Small phones: tighten spacing */
+  body {
+    font-size: 14px;
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .chart-container {
+    overflow-x: auto;
+  }
+}

@@ -55,7 +55,7 @@ function RegisterPage({ onRegisterSuccess, setAuthView }) {
 
   return (
     <div className="auth-page">
-      <Container className="d-flex justify-content-center align-items-center min-vh-100">
+      <Container fluid className="d-flex justify-content-center align-items-center min-vh-100">
         <Card className="auth-card shadow">
           <Card.Body>
             <h2 className="text-center mb-4">Create Account</h2>
