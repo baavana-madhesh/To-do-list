@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const API = "http://localhost:5000";
+const API =process.env.REACT_APP_API;
 
 function TaskList({ view, tasks: parentTasks, fetchTasks, token }) {
   const [editingTaskId, setEditingTaskId] = useState(null);

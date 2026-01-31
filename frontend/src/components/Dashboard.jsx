@@ -12,7 +12,7 @@ import {
 
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
 
-const API = "http://localhost:5000";
+const API =process.env.REACT_APP_API;
 
 function Dashboard({ token }) {
   const [stats, setStats] = useState(null);

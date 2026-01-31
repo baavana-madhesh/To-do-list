@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const API = "http://localhost:5000"; // your backend URL
+const API = process.env.REACT_APP_API; // your backend URL
 
 function CreateTask({ fetchTasks, token }) {
   const [task, setTask] = useState({

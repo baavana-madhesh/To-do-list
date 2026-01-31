@@ -3,7 +3,7 @@ import axios from "axios";
 import { Container, Form, Button, Alert, Card } from "react-bootstrap";
 import "../styles/AuthStyles.css";
 
-const API = "http://localhost:5000";
+const API = process.env.REACT_APP_API;
 
 function LoginPage({ onLoginSuccess, setAuthView }) {
   const [email, setEmail] = useState("");
